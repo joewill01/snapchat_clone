@@ -20,7 +20,7 @@ export default function CameraPage() {
     // Camera permissions are not granted yet.
     return (
       <View>
-        <Text>We need your permission to show the camera</Text>
+        <Text style={{marginTop: 100}} >We need your permission to show the camera</Text>
         <Button onPress={requestPermission} title="grant permission" />
       </View>
     );

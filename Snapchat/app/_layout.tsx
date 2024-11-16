@@ -8,7 +8,7 @@ import Navigation from "./navigation";
 export default function RootLayout() {
   return (
     <View style={styles.container}>
-      <CameraPage />
+      <ChatsPage />
       <Navigation />
     </View>
   );
