@@ -1,22 +1,22 @@
 import { Text, View, StyleSheet, Pressable, Image } from "react-native";
 
-export default function Navigation() {
+export default function Navigation(props) {
     return (
         <View style={styles.container}>
             <Pressable>
-                <Image source={require('../assets/images/tab-bar-icons/map.png')} />
+                <Image source={require(props.selected == 'map'?'../assets/images/tab-bar-icons/map-selected.png':'../assets/images/tab-bar-icons/map.png')} />
             </Pressable>
             <Pressable>
-                <Image source={require('../assets/images/tab-bar-icons/chat.png')} />
+                <Image source={require(props.selected == 'chats'?'../assets/images/tab-bar-icons/chat-selected.png':'../assets/images/tab-bar-icons/chat.png')} />
             </Pressable>
             <Pressable>
-                <Image source={require('../assets/images/tab-bar-icons/camera-selected.png')} />
+                <Image source={require(props.selected == 'camera'?'../assets/images/tab-bar-icons/camera-selected.png':'../assets/images/tab-bar-icons/camera.png')} />
             </Pressable>
             <Pressable>
-                <Image source={require('../assets/images/tab-bar-icons/friends.png')} />
+                <Image source={require(props.selected == 'friends'?'../assets/images/tab-bar-icons/friends-selected.png':'../assets/images/tab-bar-icons/friends.png')} />
             </Pressable>
             <Pressable>
-                <Image source={require('../assets/images/tab-bar-icons/play.png')} />
+                <Image source={require(props.selected == 'play'?'../assets/images/tab-bar-icons/play-selected.png':'../assets/images/tab-bar-icons/play.png')} />
             </Pressable>
         </View>
     )

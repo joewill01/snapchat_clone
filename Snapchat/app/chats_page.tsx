@@ -10,19 +10,79 @@ export default function ChatsPage() {
                 <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/steve.png')} />
                 <MyAppText style={styles.chatName}>Steve</MyAppText>
                 <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/recieved-opened--chat.png')} />
-                <MyAppText style={styles.status}>Recieved · 20h</MyAppText>
+                <MyAppText style={styles.status}>Recieved  ·  20h</MyAppText>
             </View>
             <View style={styles.chatContainer}>
                 <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/marshall.png')} />
                 <MyAppText style={styles.chatName}>Marshall </MyAppText>
                 <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--chat.png')} />
-                <MyAppText style={styles.status}>Delivered · 39s</MyAppText>
+                <MyAppText style={styles.status}>Delivered  ·  39s</MyAppText>
             </View>
             <View style={styles.chatContainer}>
                 <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/will.png')} />
                 <MyAppText style={styles.chatName}>Will</MyAppText>
                 <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--video.png')} />
-                <MyAppText style={styles.status}>Delivered · 25m</MyAppText>
+                <MyAppText style={styles.status}>Delivered  ·  25m</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/marshall.png')} />
+                <MyAppText style={styles.chatName}>Marshall </MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--chat.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  39s</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/will.png')} />
+                <MyAppText style={styles.chatName}>Will</MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--video.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  25m</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/marshall.png')} />
+                <MyAppText style={styles.chatName}>Marshall </MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--chat.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  39s</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/will.png')} />
+                <MyAppText style={styles.chatName}>Will</MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--video.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  25m</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/marshall.png')} />
+                <MyAppText style={styles.chatName}>Marshall </MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--chat.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  39s</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/will.png')} />
+                <MyAppText style={styles.chatName}>Will</MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--video.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  25m</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/marshall.png')} />
+                <MyAppText style={styles.chatName}>Marshall </MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--chat.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  39s</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/will.png')} />
+                <MyAppText style={styles.chatName}>Will</MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--video.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  25m</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/marshall.png')} />
+                <MyAppText style={styles.chatName}>Marshall </MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--chat.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  39s</MyAppText>
+            </View>
+            <View style={styles.chatContainer}>
+                <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/will.png')} />
+                <MyAppText style={styles.chatName}>Will</MyAppText>
+                <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--video.png')} />
+                <MyAppText style={styles.status}>Delivered  ·  25m</MyAppText>
             </View>
         </View>
     )
