@@ -1,11 +1,9 @@
-import { Text, View, StyleSheet, Pressable, Image } from "react-native";
+import { Text, View, StyleSheet, Pressable, Image, ScrollView } from "react-native";
 import MyAppText from '../components/my_app_text';
 
-export default function ChatsPage() {
+export default function ChatsPage(props) {
     return (
-        <View style={styles.container}>
-            <MyAppText style={styles.title}>Chat</MyAppText>
-
+        <ScrollView style={[styles.container, props.style]}showsVerticalScrollIndicator={false}>
             <View style={styles.chatContainer}>
                 <Image style={styles.bitmoji} source={require('../assets/images/bitmojis/steve.png')} />
                 <MyAppText style={styles.chatName}>Steve</MyAppText>
@@ -84,7 +82,7 @@ export default function ChatsPage() {
                 <Image style={styles.statusGlyph} source={require('../assets/images/chat-status/sent-delivered--video.png')} />
                 <MyAppText style={styles.status}>Delivered  ·  25m</MyAppText>
             </View>
-        </View>
+        </ScrollView>
     )
 }
 

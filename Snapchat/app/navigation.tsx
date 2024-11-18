@@ -1,22 +1,48 @@
 import { Text, View, StyleSheet, Pressable, Image } from "react-native";
 
-export default function Navigation(props) {
+export interface Props {
+    selected: string,
+    onButtonClick: Function
+}
+
+export default function Navigation(props: Props) {
+
     return (
         <View style={styles.container}>
             <Pressable>
-                <Image source={require(props.selected == 'map'?'../assets/images/tab-bar-icons/map-selected.png':'../assets/images/tab-bar-icons/map.png')} />
+                {props.selected == 'map' ? 
+                    <Image source={require('../assets/images/tab-bar-icons/map-selected.png')} />
+                :
+                    <Image source={require('../assets/images/tab-bar-icons/map.png')} />
+                }
+            </Pressable>
+            <Pressable onPress={() => {props.onButtonClick("chats")}}>
+                {props.selected == 'chats' ? 
+                    <Image source={require('../assets/images/tab-bar-icons/chat-selected.png')} />
+                :
+                    <Image source={require('../assets/images/tab-bar-icons/chat.png')} />
+                }
+            </Pressable>
+            <Pressable onPress={() => {props.onButtonClick("camera")}}>
+                {props.selected == 'camera' ? 
+                    <Image source={require('../assets/images/tab-bar-icons/camera-selected.png')} />
+                :
+                    <Image source={require('../assets/images/tab-bar-icons/camera.png')} />
+                }
             </Pressable>
             <Pressable>
-                <Image source={require(props.selected == 'chats'?'../assets/images/tab-bar-icons/chat-selected.png':'../assets/images/tab-bar-icons/chat.png')} />
+                {props.selected == 'friends' ? 
+                    <Image source={require('../assets/images/tab-bar-icons/friends-selected.png')} />
+                :
+                    <Image source={require('../assets/images/tab-bar-icons/friends.png')} />
+                }
             </Pressable>
             <Pressable>
-                <Image source={require(props.selected == 'camera'?'../assets/images/tab-bar-icons/camera-selected.png':'../assets/images/tab-bar-icons/camera.png')} />
-            </Pressable>
-            <Pressable>
-                <Image source={require(props.selected == 'friends'?'../assets/images/tab-bar-icons/friends-selected.png':'../assets/images/tab-bar-icons/friends.png')} />
-            </Pressable>
-            <Pressable>
-                <Image source={require(props.selected == 'play'?'../assets/images/tab-bar-icons/play-selected.png':'../assets/images/tab-bar-icons/play.png')} />
+                {props.selected == 'play' ? 
+                    <Image source={require('../assets/images/tab-bar-icons/play-selected.png')} />
+                :
+                    <Image source={require('../assets/images/tab-bar-icons/play.png')} />
+                }
             </Pressable>
         </View>
     )
